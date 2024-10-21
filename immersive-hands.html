@@ -200,7 +200,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       session.addEventListener('end', onSessionEnded);
       session.addEventListener('inputsourceschange', onInputSourcesChange);
       // trackedSources are still experimental. Don't rely on this feature yet.
-      session.addEventListener('trackedsourceschange', onInputSourcesChange);
+      session.addEventListener('trackedsourceschange', onTrackedSourcesChange);
 
       session.addEventListener('visibilitychange', e => {
         // remove hand controller while blurred
